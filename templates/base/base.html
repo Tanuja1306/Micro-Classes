@@ -1,0 +1,68 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    
+    <style>
+
+        .navbar-custom {
+            background-color: lightgreen;
+        }
+        
+    </style>
+    <title>{% block title %} {% endblock %}</title>
+    <style>{% block css %} {% endblock %}</style>
+</head>
+<body  >
+
+
+{% include 'base/header.html' %}
+
+<div class="container">
+{% block content %}
+
+{% endblock %}
+</div>
+
+<footer class="mainfooter" role="contentinfo" >
+    <div class="footer-middle" style=" padding-top: 1em;">
+    <div class="container">
+      <div class="row">
+  
+    <div class="col-4">
+      <h5 style="color:rgb(49, 48, 48);">Micro CLS</h5>
+    </div>
+        <div class="col-5"> <p>Made by <strong> Tanuja Kumari</strong> </p></div>
+  
+      
+    
+      <div class="col-3">
+        <p> Source Code on Github  <a href="https://github.com/Tanuja1306" target="_blank"><i class="fab fa-github"></i></a>  </p>
+      </div>
+      
+  
+  
+      </div>
+    </div>
+    </div>
+  </footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
